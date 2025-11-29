@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Modern Page</title>
+
+    <style>
+        /* Global Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            color: #f1faee;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Main Container */
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        /* Card Component */
+        .card {
+            background: #ffffff;
+            color: #1d3557;
+            padding: 30px 40px;
+            border-radius: 16px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+        }
+
+        /* Button */
+        .btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #1d3557;
+            color: #f1faee;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #457b9d;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="header">
+        <h1>Welcome to My Page</h1>
+        <p>Clean HTML with Modern High-Level CSS</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Modern Card</h2>
+            <p>This is a simple card styled with advanced CSS techniques.</p>
+            <button class="btn">Learn More</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Your Name</p>
+    </footer>
+
+</body>
+</html>
